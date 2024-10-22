@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.navbar button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.white-button {
+  background-color: white;
+  /* White button for dark mode */
+  color: #121212;
+  /* Dark text color for contrast */
+}
+
+.dark-button {
+  background-color: #424242;
+  /* Dark button for light mode */
+  color: white;
+  /* White text color for contrast */
+}
+
+.navbar button:hover {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
